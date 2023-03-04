@@ -34,6 +34,10 @@
         gap: 1vh;
         width: 100%;
     }
+    .footer__contact a {
+        text-decoration: underline;
+        font-weight: 600;
+    }
     h2 {
         padding: 0;
         margin: 0;

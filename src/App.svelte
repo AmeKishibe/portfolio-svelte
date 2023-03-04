@@ -4,9 +4,9 @@
 </script>
 
 <Header />
-<div class="body__line" />
 
 <main>
+	<div class="body__line" />
 	<p class="text-center">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sit,
 		reprehenderit sequi similique ea voluptatibus nemo asperiores et

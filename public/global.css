@@ -13,10 +13,14 @@ body {
 }
 
 body {
-	margin-left: 10vw;
+	margin-left: 5vw;
 	margin-right: 5vw;
 	color: #303D21;
 	font-family: "Satoshi";
+}
+
+main {
+	height: 100%;
 }
 
 .body__line {
@@ -86,4 +90,10 @@ button:not(:disabled):active {
 
 button:focus {
 	border-color: #666;
+}
+
+@media screen and (min-width: 868px) {
+	body {
+		margin-left: 10vw;
+	}
 }

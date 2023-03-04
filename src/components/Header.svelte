@@ -15,6 +15,7 @@
 
 <style>
     h1 {
+        font-weight: 800;
         font-size: 32px;
     }
     .header {
@@ -36,7 +37,7 @@
     }
 
     .buttons__header a {
-        font-weight: 600;
+        font-weight: 400;
         display: flex;
         text-align: center;
         align-items: center;
@@ -47,7 +48,7 @@
         padding: 8px 8px;
         width: 72px;
     }
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 868px) {
         .header {
             flex-direction: row;
             justify-content: space-between;
