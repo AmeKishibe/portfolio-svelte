@@ -1,7 +1,10 @@
 @font-face {
-	font-family: 'Comic Sans Pro';
-	src: url("./comic-sans-pro.woff") format("woff");
-	font-style: normal;
+	font-family: 'Satoshi';
+	src: url("./font/Satoshi-Black.otf") format("otf"),
+		url("./font/Satoshi-Bold.otf") format("otf"),
+		url("./font/Satoshi-Light.otf") format("otf"),
+		url("./font/Satoshi-Medium.otf") format("otf"),
+		url("./font/Satoshi-Regular.otf") format("otf");
 }
 
 html,
@@ -10,16 +13,28 @@ body {
 }
 
 body {
-	margin-left: 5vw;
+	margin-left: 10vw;
 	margin-right: 5vw;
 	color: #303D21;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Satoshi";
+}
+
+.body__line {
+	color: #79A671;
+	margin-left: 5vw;
+	height: 100%;
+	width: 5px;
 }
 
 h1 {
+	font-weight: bold;
 	margin: 0;
 	color: #303D21;
 	text-transform: uppercase;
+}
+
+h2 {
+	font-weight: bold;
 }
 
 a {

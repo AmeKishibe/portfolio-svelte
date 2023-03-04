@@ -44,13 +44,14 @@
         color: #303d21;
         border: solid 2px #303d21;
         border-radius: 30px;
-        padding: 10px 10px;
-        width: 84px;
+        padding: 8px 8px;
+        width: 72px;
     }
     @media screen and (min-width: 850px) {
         .header {
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
         }
     }
 </style>
