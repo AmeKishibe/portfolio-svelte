@@ -18,6 +18,9 @@
 </footer>
 
 <style>
+    .footer {
+        font-size: 18px;
+    }
     .footer__legacy {
         margin-top: 10vh;
         display: flex;
@@ -36,7 +39,7 @@
     }
     .footer__contact a {
         text-decoration: underline;
-        font-weight: 600;
+        font-weight: 500;
     }
     h2 {
         padding: 0;

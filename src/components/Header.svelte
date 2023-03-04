@@ -14,6 +14,9 @@
 </header>
 
 <style>
+    a {
+        text-decoration: none;
+    }
     h1 {
         font-weight: 800;
         font-size: 32px;
