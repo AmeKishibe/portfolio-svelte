@@ -42,6 +42,7 @@
         font-weight: 500;
     }
     h2 {
+        font-size: 24px;
         padding: 0;
         margin: 0;
     }

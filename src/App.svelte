@@ -1,8 +1,7 @@
 <script lang="ts">
 	import Header from "./components/Header.svelte";
 	import Footer from "./components/Footer.svelte";
-	import { projets } from "./lib/projet";
-	let projectDescription = projets[0].description;
+	import LastProject from "./components/LastProject.svelte";
 </script>
 
 <Header />
@@ -34,15 +33,14 @@
 			<a href="#">Voir mes autres projets</a>
 		</div>
 	</div>
-	<div class="last-project">
-		<h2>Mon dernier projet</h2>
-		<p>IMG</p>
-		<p>{projectDescription}</p>
-	</div>
+	<LastProject />
 </main>
 <Footer />
 
 <style>
+	h2 {
+		font-size: 24px;
+	}
 	.presentation__button {
 		margin: 2vh 0;
 		display: flex;
