@@ -2,6 +2,7 @@
 	import Header from "./components/Header.svelte";
 	import Footer from "./components/Footer.svelte";
 	import LastProject from "./components/LastProject.svelte";
+	import ButtonDevProject from "./components/ButtonDevProject.svelte";
 </script>
 
 <Header />
@@ -34,6 +35,8 @@
 		</div>
 	</div>
 	<LastProject />
+	<h2>Mes projets développement</h2>
+	<ButtonDevProject />
 </main>
 <Footer />
 
