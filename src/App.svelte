@@ -3,6 +3,7 @@
 	import Footer from "./components/Footer.svelte";
 	import LastProject from "./components/LastProject.svelte";
 	import ButtonDevProject from "./components/ButtonDevProject.svelte";
+	import { projets } from "./lib/projet";
 </script>
 
 <Header />
@@ -30,17 +31,53 @@
 			</div>
 		</div>
 		<div class="presentation__button">
-			<a href="#">Voir mes projets dev</a>
-			<a href="#">Voir mes autres projets</a>
+			<a href="#projects">Voir mes projets dev</a>
+			<!-- <a href="#">Voir mes autres projets</a> -->
 		</div>
 	</div>
-	<LastProject />
-	<h2>Mes projets développement</h2>
-	<ButtonDevProject />
+	<!-- <LastProject /> -->
+	<div class="separation">
+		<div class="separation__line--left" />
+		<a href="#projects"
+			><img src="images/arrow-bottom.png" alt="fleche vers le bas" /></a
+		>
+		<div class="separation__line--right" />
+	</div>
+	<div class="projets">
+		<h2 id="projects">Mes projets</h2>
+		<ul>
+			{#each projets as project}
+				<li>
+					<a href={project.url}
+						>{project.name} - {project.type} - {project.language}</a
+					>
+				</li>
+			{/each}
+		</ul>
+	</div>
+	<!-- <ButtonDevProject /> -->
 </main>
 <Footer />
 
 <style>
+	.separation {
+		margin: 5vh 0;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.separation__line--left {
+		margin-top: 1vh;
+		background-color: #79a671;
+		width: 100%;
+		height: 5px;
+	}
+	.separation__line--right {
+		margin-top: 1vh;
+		background-color: #79a671;
+		width: 100%;
+		height: 5px;
+	}
 	h2 {
 		font-size: 24px;
 	}
@@ -60,5 +97,14 @@
 	.presentation__category p {
 		padding: 0;
 		margin: 0;
+	}
+	@media screen and (min-width: 868px) {
+		.separation__line--left {
+			display: none;
+		}
+		.separation img {
+			margin-right: 2vw;
+			max-width: 70%;
+		}
 	}
 </style>
